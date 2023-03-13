@@ -1,8 +1,9 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 :root {
-    --dark:  rgba(127, 126, 133, 0.7);
+    --dark: rgba(127, 126, 133, 0.7);
     --aqua: rgb(83, 177, 177);
     --light: white;
 }
@@ -22,31 +23,35 @@ header {
     color: var(--light);
     line-height: 8vh;
 }
+
 h1 {
     font-size: 200%;
-    background-color:var(--dark);
+    background-color: var(--dark);
     border: 1px solid var(--dark);
     border-radius: 10px;
     padding: 0px 12px;
 }
 
-nav ul {
-    display: flex;
-    justify-content:space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-   min-width: 300px;
-}
-section {
+body header nav ul {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 300px;
+    padding-top: 20px;
+}
 
+section {
+    display: flex;
+    display: column;
 }
-div {
-    position: relative;
-    width: 100%;
-    text-align: center;
+
+body section nav ul {
+    display: flex;    
+    justify-content: space-evenly
 }
+
+/*This is the banner background and text */
 .banner {
     color: white;
     background: url(/assets/white-painted-wall-texture-background_53876-138197.avif);
@@ -54,13 +59,38 @@ div {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    padding: 1%;
 }
+
 .banner-text {
+    font-size: 150%;
     border: 5px solid var(dark);
     background-color: var(--dark);
-    width:fit-content;
+    width: fit-content;
     border-radius: 10px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
+}
+
+.side-heading {
+    font-size: 200%;
+    font-weight: lighter;
+    color: var(--aqua);
+    border-style: none solid none none;
+    padding-right: 1%;
+}
+
+.about-me, .work, .contact-me {
+    padding: 5%;
+}
+
+.contact-me {
+    justify-content: flex-start;
+}
+.contact-me h5 {
+    flex-basis: content;
+}
+.contact-info{
+    flex-basis: 100%;
 }
