@@ -47,7 +47,7 @@ section {
 }
 
 body section nav ul {
-    display: flex;    
+    display: flex;
     justify-content: space-evenly
 }
 
@@ -81,16 +81,55 @@ body section nav ul {
     padding-right: 1%;
 }
 
-.about-me, .work, .contact-me {
+.about-me,
+.work,
+.contact-me {
     padding: 5%;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-gallery li {
+    height: 200px;
+    cursor: pointer;
+    position: relative;
+    flex: 1 1 auto;
+    margin:1%;
+    border: 4px solid var(--dark);
+
+}
+
+.image-gallery li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+
+}
+
+.overlay {
+    border: 1px solid var(--dark);
+    padding: 2%;
+    position: absolute;
+    background-color: var(--dark);
+    color: var(--light);
+    font-size: 150%;
+    bottom: 10px;
+    left: 0px;
 }
 
 .contact-me {
     justify-content: flex-start;
 }
+
 .contact-me h5 {
     flex-basis: content;
 }
-.contact-info{
+
+.contact-info {
     flex-basis: 100%;
 }
