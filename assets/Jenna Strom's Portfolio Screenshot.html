@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/index.html#contact-me -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenna Strom's Portfolio</title>
+    <link rel="stylesheet" href="./Jenna Strom&#39;s Portfolio Screenshot_files/reset.css">
+    <link rel="stylesheet" href="./Jenna Strom&#39;s Portfolio Screenshot_files/style.css">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1100.0" data-gr-ext-installed="">
+    <header>
+        <h1>Jenna Strom</h1>
+        <nav class="header-list">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html#about-me">About Me</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#work">Work</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#contact-me">Contact Me</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">
+        <img src="./Jenna Strom&#39;s Portfolio Screenshot_files/girlavatar.png" class="avatar" alt="placeholder-image">
+        <div class="banner-text">
+            <h2>Full Stack Web Developer</h2>
+        </div>
+    </div>
+    <main>
+        <section class="about-me" id="about-me">
+            <h3 class="side-heading">About Me</h3>
+            <p class="about-me">My name is Jenna Strom and I live in Minneapolis, Minnesota with my husband, our
+                two-year
+                old son and our two dogs. I love to be outside during the summer and go on walks. During the winter I
+                love
+                to stay cozy and do puzzles or play board games. I've been a wedding cake decorator for the past 15
+                years
+                and also manage a cake decorating supplies store. I am both creative and logic brained and I love that
+                website developing uses both!</p>
+        </section>
+        <section class="work" id="work">
+            <h4 class="side-heading">Work</h4>
+            <div class="container">
+                <ul class="image-gallery">
+                    <li id="project-one">
+                        <div class="overlay"><span>Project One</span></div>
+                        <a href="http://www.github.com/" target="blank"><img src="./Jenna Strom&#39;s Portfolio Screenshot_files/glittering-shining-holidays-backdrop-festivities-77019006.jpg" alt="placeholder-image"></a>
+                    </li>
+                    <li>
+                    <div class="overlay"><span>Project Two</span></div>
+                    <a href="http://www.github.com/" target="blank"><img src="./Jenna Strom&#39;s Portfolio Screenshot_files/glittering-shining-holidays-backdrop-festivities-77019006.jpg" alt="placeholder-image"></a>
+
+                    </li>
+                    <li>
+                        <div class="overlay"><span>Project Three</span></div>
+                        <a href="http://www.github.com/" target="blank"><img src="./Jenna Strom&#39;s Portfolio Screenshot_files/glittering-shining-holidays-backdrop-festivities-77019006.jpg" alt="placeholder-image"></a>
+                    </li>
+                    <li>
+                        <div class="overlay"><span>Project Four</span></div>
+                        <a href="http://www.github.com/" target="blank"><img src="./Jenna Strom&#39;s Portfolio Screenshot_files/glittering-shining-holidays-backdrop-festivities-77019006.jpg" alt="placeholder-image"></a>
+                    </li>
+                    <li>
+                        <div class="overlay"><span>Project Five</span></div>
+                        <a href="http://www.github.com/" target="blank"><img src="./Jenna Strom&#39;s Portfolio Screenshot_files/glittering-shining-holidays-backdrop-festivities-77019006.jpg" alt="placeholder-image"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact-me" id="contact-me">
+            <h5 class="side-heading">Contact Me</h5>
+            <nav class="contact-info">
+                <ul>
+                    <li><a href="tel:7632679444">763-267-9444</a></li>
+                    <li><a href="mailto:jennajohnson16@gmail.com">jennajohnson16@gmail.com</a></li>
+                    <li><a href="https://github.com/JennaStrom">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/">Linkedin</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
