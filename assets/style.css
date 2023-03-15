@@ -62,7 +62,7 @@ img:hover{
 /*This is the banner background and text */
 .banner {
     color: white;
-    background: url(/assets/white-painted-wall-texture-background_53876-138197.avif);
+    background: url(./assets/white-painted-wall-texture-background_53876-138197.avif);
     height: 24vh;
     display: flex;
     justify-content: flex-end;
